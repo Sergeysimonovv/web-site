@@ -1,0 +1,21 @@
+{% extends 'main/template_first.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<span><h1>Натяжные потолки</h1>></span>
+<div class="container">
+        <a href="{% url 'price' %}"><div class="block block_one">
+            <p class="text">Прайс на услуги</p>
+        </div></a>
+        <a href="{% url 'about' %}"><div class="block block_two">
+            <p class="text">О нас</p>
+        </div></a>
+        <a href=""><div class="block block_three">
+            <p class="text">Наши работы</p>
+        </div></a>
+        <a href="https://lumfer.ru/"><div class="block block_four">
+            <p class="text">Партнерский сайт</p>
+        </div></a>
+    </div>
+{% endblock%}
